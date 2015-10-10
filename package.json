@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "child-process-ws": "jacobrosenthal/child-process-ws#exec",
+    "child-process-ws": "jacobrosenthal/child-process-ws",
     "material-ui": "jacobrosenthal/material-ui#context",
     "node-http-server": "^3.0.2",
     "react": "^0.13.0",
