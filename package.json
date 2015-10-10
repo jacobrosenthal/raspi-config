@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack && node node_modules/node-http-server/server/http.js root=src/ port=9998 launch=now",
-    "ws-cp": "DEBUG=bindings node ./node_modules/child-process-ws/ChildProcess-server.js"
+    "ws-cp": "DEBUG=* node ./node_modules/child-process-ws/ChildProcess-server.js"
   },
   "repository": {
     "type": "git",

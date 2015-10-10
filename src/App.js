@@ -129,8 +129,12 @@ let App = React.createClass({
     this._log('_onSelect ' + this.state.wifi.ssid + ' ' + this.state.password);
 
     wpaCli.set(this.state.wifi.ssid, this.state.password, function (error) {
-      this._log('wpaCli.set ' + error.message);
-      this.refs.WifiView.dismiss();
+      if(error){
+        self._log('wpaCli.set ' + error.message);
+      }
+
+      self._log('wpaCli.set successful');
+      self.refs.WifiView.dismiss();
     });
 
   },
